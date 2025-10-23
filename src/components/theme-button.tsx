@@ -6,7 +6,7 @@ export default function ThemeButton() {
     const { theme, setTheme } = useTheme();
     return (
         <>
-            <button className="text-white" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>{theme}</button>
+            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>{theme}</button>
         </>
     );
 }
