@@ -1,5 +1,5 @@
 import ThemeButton from "@/components/theme-button";
-import Login from "@/pages/account/login";
+import Login from "@/app/account/login/page";
 import Link from "next/link";
 
 export default function Home() {
