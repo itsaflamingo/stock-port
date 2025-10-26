@@ -3,6 +3,10 @@
 export default function RegisterForm() {
     return (
         <form className="flex flex-col gap-2 w-5/7">
+            <input type="name" placeholder="Legal First Name" className="border border-[var(--grey-border)] w-full p-2"
+                onChange={(e) => console.log(e.target.value)} />
+            <input type="last name" placeholder="Legal Last Name" className="border border-[var(--grey-border)] w-full p-2"
+                onChange={(e) => console.log(e.target.value)} />
             <input type="email" placeholder="Email" className="border border-[var(--grey-border)] w-full p-2"
                 onChange={(e) => console.log(e.target.value)} />
             <input type="password" placeholder="Password" className="border border-[var(--grey-border)] w-full p-2"
