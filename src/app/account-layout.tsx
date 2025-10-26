@@ -1,14 +1,14 @@
 import ThemeButton from "@/components/theme-button"
 import Link from "next/link"
 
-export default function AccountLayout({ children }: { children: React.ReactNode }) {
+export default function AccountLayout({ children, pageName, changePageRoute }: { children: React.ReactNode, changePageRoute: string, pageName: string }) {
     return (
         <div className="w-full h-full flex flex-col justify-start align-center">
             <menu className="flex justify-end gap-2 p-2 h-15 mb-10">
                 <ThemeButton />
                 <div className="w-px h-8 bg-[var(--grey-border)] self-center" />
-                <Link className="font-bold self-center" href="/register">
-                    Join us
+                <Link className="font-bold self-center" href={changePageRoute}>
+                    {pageName}
                 </Link>
             </menu>
 

@@ -4,7 +4,7 @@ import AccountLayout from "./account-layout";
 
 export default function Home() {
   return (
-    <AccountLayout>
+    <AccountLayout pageName={'Join us'} changePageRoute={'/register'}>
       <FormContainer form={<LoginForm />} head="Log In"></FormContainer>
     </AccountLayout>
   );

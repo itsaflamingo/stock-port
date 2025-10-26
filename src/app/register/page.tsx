@@ -5,7 +5,7 @@ import AccountLayout from "../account-layout";
 
 export default function AccountPage() {
     return (
-        <AccountLayout>
+        <AccountLayout pageName={'Back to Log In'} changePageRoute={'/'}>
             <FormContainer form={<RegisterForm />} head="Register"></FormContainer>
         </AccountLayout>
     )
