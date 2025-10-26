@@ -1,6 +1,5 @@
-import RegisterButton from "@/components/register-button";
 import ThemeButton from "@/components/theme-button";
-import Account from "@/pages/account/account";
+import Login from "@/pages/account/login";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
         <Link className="font-bold self-center" href="/account/register">Join us</Link>
         {/* <RegisterButton /> */}
       </menu>
-      <Account />
+      <Login />
       <footer>
       </footer>
     </>

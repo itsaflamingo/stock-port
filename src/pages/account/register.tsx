@@ -1,9 +1,11 @@
 "use client"
 
+import FormContainer from "@/components/form-container"
+import RegisterForm from "@/components/register-form"
+
 export default function Register() {
+
     return (
-        <div>
-            <button>Register</button>
-        </div>
+        <FormContainer form={<RegisterForm />} head="Register"></FormContainer>
     )
 }
