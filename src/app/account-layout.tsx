@@ -12,10 +12,9 @@ export default function AccountLayout({ children, pageName, changePageRoute }: {
                 </Link>
             </menu>
 
-            <main className="w-md h-5/10 flex flex-col items-center justify-center self-center
-            shadow-[0_12px_20px_5px_rgba(1,1,1,0.06)]
-            dark:shadow-[0_12px_20px_5px_rgba(255,255,255,0.3)]
-            gap-10">{children}</main>
+            <main className="w-md h-5/10 flex flex-col items-center justify-center self-center shadow-[0_12px_20px_5px_rgba(1,1,1,0.06)] dark:shadow-[0_12px_20px_5px_rgba(255,255,255,0.3)] gap-10">
+                {children}
+            </main>
 
             <footer>{/* optional footer here */}</footer>
         </div>
